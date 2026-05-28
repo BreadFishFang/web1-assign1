@@ -1,0 +1,26 @@
+body{
+    background-color: #151413;
+}
+
+/* this is a comment in CSS */
+
+/* to target all paragraphs, make a rule for p */
+
+p{
+    color: #ffecdb;
+}
+h1{
+    color: #fcdbbd;
+}
+h2{
+    color: #fddcb2;
+}
+h3{
+    color: #eac48b;
+}
+text{
+    color: #f0dbba;
+}
+cite{
+    color: #e1c78e;
+}
