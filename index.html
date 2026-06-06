@@ -9,9 +9,21 @@
 </head>
 <body>
     <header>
+        
         <!-- header is a container for introductory content-->
         <h1>Nancy Fang</h1>
+        <nav>
+            <!-- navigation is oftem organized in lists for easier styling -->
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="notes.html">Note</a></li>
+                <!-- external pages need the full address...
+                 use_blank to open in a new tab -->
+                 <li><a href="https://imdac.github.io/" target="_blank">More web stuff</a></li>
+            </ul>
+        </nav>
     </header>
+
     <main>
         <!--article is a self-contained block of text-->
         <article>
@@ -24,20 +36,38 @@
             <img src="images/dog_run.gif" alt="a dog running">
             <!-- an article needs a head tag (h1-h6)-->
             <h2>About me</h2>
+            <img src="images/Fang_Nancy.jpg" alt="Nancy's profile picture">
             <!-- p is a paragraph tag -->
             <p>I'm an international student from <em>Taiwan</em>. I'm very interested in learning web design. The first time I learned web design was in high school, but at that time, I just learned the basics of dreamweaver and was not very good at it. Because I only had a little exposure to dreamweaver in high school, I've almost completely forgotten my web design knowledge. So I think <strong>it's time to go back to school and learn it again.</strong>
             </p>
             <p>I want to learn more about web design, and I hope to gain some knowledge of programming. That's why I chose this course. I'm really looking forward to learning more about web design through this course. As I learn how to design a website, I want to use these skills to create my own website in the future.
             </p>
             <!--quote is a section that contains a quote from another source-->
-            <quote>
+        </article>
+            <!-- blockquote is a tag that defines a section that is quoted from another source-->
+            <blockquote>
                 <p>"Live and learn."</p>
                 <!-- cite is a tag that defines the source of a quote -->
-                <cite>- George Gascoigne</cite>
-            </quote>
+                <cite>— George Gascoigne</cite>
+            </blockquote>
+            <blockquote class="custom-quote">
+            <p>"The only way to do great work is to love what you do."</p>
+            <cite>— Steve Jobs</cite>
+            </blockquote>
+
+            <h2>My Hobbies</h2>
+            <ul>
+                <!-- ul is an unordered list, li is a list item -->
+                <li>Making coffee</li>
+                <li>Cooking</li>
+                <li>Traveling</li>
+                <li>Learning languages</li>
+                <li>Hand making stuff</li>
+                <li>Playing video games</li>
+            </ul>
             <!--abbreviation is a tag that defines an abbreviation or acronym-->
             <p>This is the3<sup>rd</sup> week <abbr title="Interactive Media Design">IMD</abbr> assignment.<br>
-        </article>
+        
     </main>
     <!--footer is a container for footer content-->
     <footer>
