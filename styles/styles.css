@@ -19,8 +19,26 @@ h3{
     color: #eac48b;
 }
 text{
-    color: #f0dbba;
+    color: #ffecdb;
 }
 cite{
     color: #e1c78e;
+}
+li{
+    color: #ffecdb;
+}
+
+a:link{
+    color: #ffecdb;
+/* a:link means to target all a elements that are unvisited links */
+}
+a:visited{
+    color: #ffecdb;
+}
+/* a:visited means to target all a elements that are visited links */
+
+/* src$=".jpg" means to target all img elements with a src attribute that ends with .jpg */
+img[src$=".jpg"] {
+    width: 200px;
+    height: auto;
 }
