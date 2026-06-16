@@ -9,15 +9,16 @@
 </head>
 <body>
     <header>
-        <h1>Nancy Fang</h1>
+        <!-- use class to create a tag for styling, we can use the same class in CSS file to style it.-->
+        <h1 class="mainheader" id="tophead">Nancy Fang</h1>
         <nav>
             <!-- navigation is oftem organized in lists for easier styling -->
-            <ul>
+            <ul class="header-main-link" style="list-style-type: none;">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="notes.html">Note</a></li>
                 <!-- external pages need the full address...
                  use_blank to open in a new tab -->
-                 <li><a href="https://imdac.github.io/" target="_blank">More web stuff</a></li>
+                <li><a href="https://imdac.github.io/" target="_blank">More web stuff</a></li>
             </ul>
         </nav>
     </header>
@@ -33,25 +34,50 @@
         <h2>Note</h2>
         <p>This page shows the notes that I learned about using HTML to create a simple webpage</p>
         <h2>Here is the list of tags that I learn in this course:</h2>
-        <ul>
-            <li><code>&lt;html&gt;</code> - The root element of an HTML page</li>
-            <li><code>&lt;title&gt;</code> - Specifies the title of the HTML page</li>
-            <li><code>&lt;body&gt;</code> - Contains the visible content of the HTML page</li>
-            <li><code>&lt;header&gt;</code> - Header is a container for introductory content</li>
-            <li><code>&lt;main&gt;</code> - main is the main content of the page</li>
-            <li><code>&lt;footer&gt;</code> - footer is a container for the footer of the page</li>
-            <li><code>&lt;nav&gt;</code> - Navigation is oftem organized in lists for easier styling</li>
-            <li><code>&lt;ul&gt;</code> - Represents an unordered list</li>
-            <li><code>&lt;li&gt;</code> - li tags are used to organize the links into a list</li>
-            <li><code>&lt;a&gt;</code> - a tag creates a hyperlink</li>            
-            <li><code>&lt;h1&gt;</code> - h1 is a tag that represents the most important heading</li>
-            <li><code>&lt;h2&gt;</code> - h2 is a tag that represents the second most important heading</li>
-            <li><code>&lt;h3&gt;</code> - h3 is a tag that represents the third most important heading</li>
-            <li><code>&lt;p&gt;</code> - p is a tag that represents a paragraph</li>
-            <li><code>&lt;article&gt;</code> - Article should always contain a heading tag (h2-h6)</li>
-            <li><code>&lt;img&gt;</code> - Represents an image</li>
+        <dl>
+            <!-- dt tag is used to define a term in a description list -->
+            <!-- dd tag is used to describe the term in a description list -->
+            <!-- code tag allow us to disply code in our page. Because If I want to add < and > in the page,
+             the browser will think it's a tag, so I need to use code tag to display the code in the page.-->
+            <dt><code>&lt;html&gt;</code></dt>
+            <dd>HTML is the root element of an HTML page. We need to use <code>&lt;html&gt;</code> at the begining and <code>&lt;/html&gt;</code> at the end of our .html file </dd>
+            <dt><code>&lt;title&gt;</code></dt>
+            <dd>Title is the website's main title, which appears in the browser's title bar or tab. 
+                And it is a part of the head element.</dd>
+            <dt><code>&lt;body&gt;</code></dt>
+            <dd>Contains the visible content of the HTML page. There can be only one body element in a document.</dd>
+            <dt><code>&lt;header&gt;</code></dt>
+            <dd>Header is a container for introductory content. 
+                Anything in header will show at the top of the page.</dd>
+            <dt><code>&lt;main&gt;</code></dt>
+            <dd>Main is the main content of the page. It is in between the header and footer.</dd>
+            <dt><code>&lt;footer&gt;</code></dt>
+            <dd>footer is a container for the footer of the page. There can be only one footer element in a document.
+                Anything in footer will show at the bottom of the page.
+            </dd>
+            <dt><code>&lt;nav&gt;</code></dt>
+            <dd>Navigation is oftem organized in lists for easier styling.</dd>
+            <dt><code>&lt;ul&gt;</code></dt>
+            <dd>ul is an unordered list.</dd>
+            <dt><code>&lt;li&gt;</code></dt>
+            <dd>li is a list item. li tags are used to organize the links into a list. 
+                We put li in ul to create an unordered list.</dd>
+            <dt><code>&lt;a&gt;</code></dt>
+            <dd>a is an anchor tag that creates a hyperlink. If we need to create a hyperlink, we use the a tag.</dd>
+            <dt><code>&lt;h1&gt;</code></dt>
+            <dd>h1 is a tag that represents the most important heading.</dd>
+            <dt><code>&lt;h2&gt;</code></dt>
+            <dd>h2 is a tag that represents the second most important heading</dd>
+            <dt><code>&lt;h3&gt;</code></dt>
+            <dd>h3 is a tag that represents the third most important heading</dd>
+            <dt><code>&lt;p&gt;</code></dt>
+            <dd>p is a paragraph tag.</dd>
+            <dt><code>&lt;article&gt;</code></dt>
+            <dd>Article should always contain a heading tag (h2-h6)</dd>
+            <dt><code>&lt;img&gt;</code></dt>
+            <dd>Img is an image tag, the image element need to creat a folder for images.</dd>
             
-        </ul>
+        </dl>
     </main>
     <footer>
         <p>&copy; 2026 Nancy.</p>

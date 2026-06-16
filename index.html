@@ -7,14 +7,17 @@
     <link href="styles/styles.css" rel="stylesheet">
     <title>HTML Assignment 1</title>
 </head>
+<!--body is the container for the visible content of the page-->
 <body>
     <header>
         
         <!-- header is a container for introductory content-->
-        <h1>Nancy Fang</h1>
+        <h1 class="mainheader" id="tophead">Nancy Fang</h1>
         <nav>
             <!-- navigation is oftem organized in lists for easier styling -->
-            <ul>
+            <!-- we can use style="list-style-type: none; to remove the list point"-->
+             <!--ul is an unordered list, li is a list item, a is an anchor tag that creates a hyperlink-->
+            <ul class="header-main-link" style="list-style-type: none;">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="notes.html">Note</a></li>
                 <!-- external pages need the full address...
@@ -23,7 +26,7 @@
             </ul>
         </nav>
     </header>
-
+    <!--main tag is a container for the main content of the page-->
     <main>
         <!--article is a self-contained block of text-->
         <article>
@@ -36,7 +39,8 @@
             <img src="images/dog_run.gif" alt="a dog running">
             <!-- an article needs a head tag (h1-h6)-->
             <h2>About me</h2>
-            <img src="images/Fang_Nancy.jpg" alt="Nancy's profile picture">
+            <!-- we can use id to create a tag for styling, we can use the same id in CSS file to style it. -->
+            <img src="images/fang_nancy.jpg" id="my-image" alt="Nancy's profile picture">
             <!-- p is a paragraph tag -->
             <p>I'm an international student from <em>Taiwan</em>. I'm very interested in learning web design. The first time I learned web design was in high school, but at that time, I just learned the basics of dreamweaver and was not very good at it. Because I only had a little exposure to dreamweaver in high school, I've almost completely forgotten my web design knowledge. So I think <strong>it's time to go back to school and learn it again.</strong>
             </p>
@@ -56,7 +60,8 @@
             </blockquote>
 
             <h2>My Hobbies</h2>
-            <ul>
+            <!-- we can use style="list-style-type: shape(square, bullet); to change the list point style"-->
+            <ul style="list-style-type: square;">
                 <!-- ul is an unordered list, li is a list item -->
                 <li>Making coffee</li>
                 <li>Cooking</li>
@@ -66,7 +71,8 @@
                 <li>Playing video games</li>
             </ul>
             <!--abbreviation is a tag that defines an abbreviation or acronym-->
-            <p>This is the3<sup>rd</sup> week <abbr title="Interactive Media Design">IMD</abbr> assignment.<br>
+            <!-- sup tag can make the text appear smaller and raised above the normal text-->
+            <p>This is the5<sup>rd</sup> week <abbr title="Interactive Media Design">IMD</abbr> assignment.<br>
         
     </main>
     <!--footer is a container for footer content-->

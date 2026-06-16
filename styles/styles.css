@@ -1,16 +1,56 @@
 body{
-    background-color: #151413;
+    /* background-color is used to set the background color of the page.
+    We can use color names(black, blue, pink), hex codes, rgb values, etc. */
+    background-color: #32302e;
+    /*fornt-family is used to set the font of the text. 
+    We can use font names, or generic font families like serif, sans-serif, monospace, etc. */
+    font-family: 'Arial', sans-serif; font-size: 18px;
 }
 
 /* this is a comment in CSS */
 
 /* to target all paragraphs, make a rule for p */
-
-p{
+/* we can also target multiple elements in one rule by separating them with commas, 
+like here we target p, text, li, dl, a:link, a:visited in one rule. */
+/* a:visited means to target all a elements that are visited links */
+p, text, li, dl, a:link, a:visited{
+    /*color tag is used to set the color of the text. We can use color names(black, blue, pink), hex codes, rgb values, etc. */
     color: #ffecdb;
 }
-h1{
-    color: #fcdbbd;
+/* to target all header and footer tags, we can use comma to separate them in the selector. */
+header, footer{
+    background-color: #c8aa85;
+    /*padding is used to set the space between the content and the border of the element. 
+    We can use px, em, rem, %, etc. */
+    padding: 10px;
+    /*text-alin is used to set the alignment of the text. 
+    We can use left, right, center, justify, etc. */
+    text-align: justify;
+}
+.header-main-link{
+    background-color: #2c2016;
+    /*border-radius is used to set the rounded corners of the element. 
+    We can use px, em, rem, %, etc. */
+    border-radius: 15px;
+}
+/* we can use a:link to target all a elements that are unvisited links. And style it! */
+a:link{
+    /*to remove the line under the link, we can use text-decoration: none;   */
+    text-decoration: none;
+}
+/* hover is used to set the style of the element when the mouse is over it. */
+a:hover{
+    color: #e78d79;
+}
+/* as we set the class name to the tag, we can use .classname to target all tags with that class name in css.
+Like here I set the class name to mainheader for my h1 in HTML, and now I can use thatclassname to style it. */
+.mainheader{
+    color: #8f450d;
+}
+/* to target an element with a specific id, we can use #idname in css. 
+Like here I set the id name to my-image for my profile picture, and now I can use that id name to style it. */
+#my-image{
+    box-shadow: 0 0 1px 2px black;
 }
 h2{
     color: #fddcb2;
@@ -18,24 +58,11 @@ h2{
 h3{
     color: #eac48b;
 }
-text{
-    color: #ffecdb;
-}
 cite{
     color: #e1c78e;
 }
-li{
-    color: #ffecdb;
-}
 
-a:link{
-    color: #ffecdb;
-/* a:link means to target all a elements that are unvisited links */
-}
-a:visited{
-    color: #ffecdb;
-}
-/* a:visited means to target all a elements that are visited links */
+
 
 /* src$=".jpg" means to target all img elements with a src attribute that ends with .jpg */
 img[src$=".jpg"] {
