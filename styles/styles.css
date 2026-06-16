@@ -43,8 +43,8 @@ a:hover{
     color: #e78d79;
 }
 /* as we set the class name to the tag, we can use .classname to target all tags with that class name in css.
-Like here I set the class name to mainheader for my h1 in HTML, and now I can use thatclassname to style it. */
-.mainheader{
+Like here I set the class name to site-title for my h1 in HTML, and now I can use thatclassname to style it. */
+.site-title{
     color: #8f450d;
 }
 /* to target an element with a specific id, we can use #idname in css. 
